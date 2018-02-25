@@ -28,6 +28,19 @@
                   <warName>ROOT</warName>
               </configuration>
           </plugin>
+
+        <plugin>
+            <groupId>org.apache.tomcat.maven</groupId>
+            <artifactId>tomcat7-maven-plugin</artifactId>
+            <version>2.2</version>
+            <configuration>
+              <url>http://192.168.55.132:8080/manager/text</url>
+              <username>admin</username>  
+			        <password>tomcat8</password>   
+  			       <warFile>target/ROOT.war</warFile>
+               <path>/</path>
+            </configuration>
+        </plugin>
       </plugins>
   </build>
 </project>
